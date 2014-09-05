@@ -8,6 +8,7 @@ This repository is a **work in progress** and I would not advice you to actually
 - [ ] Strategy
 - [ ] Repository
 - [ ] Gateway
+- [ ] Singleton
 
 ## Sources ##
 http://www.phptherightway.com/pages/Design-Patterns.html
