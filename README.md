@@ -7,9 +7,5 @@ This repository is a **work in progress** and I would not advice you to actually
 - [ ] Factory
 - [ ] Strategy
 - [ ] Repository
-- [ ] Gateway
+- [x] Gateway
 - [ ] Singleton
-
-## Sources ##
-http://www.phptherightway.com/pages/Design-Patterns.html
-https://en.wikipedia.org/wiki/Software_design_pattern
