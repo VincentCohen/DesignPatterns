@@ -1,21 +1,23 @@
-<?php
+<?php namespace DesignPatters\Factory;
 
 class BoatFactory {
 
-    public static function create($boat)
+    public static function create($boat = '')
     {
+
         switch ($boat)
         {
             case "pirate":
-                return new PirateBoat();
+                return new \DesignPatters\Factory\PirateBoat();
                 break;
             case "speed":
-                return new SpeedBoat();
+                return new \DesignPatters\Factory\SpeedBoat();
                 break;
             default:
-                return new MineSweeper();
+                return new \DesignPatters\Factory\MineSweeper();
                 break;
         }
+
     }
 
 }

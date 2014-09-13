@@ -1,12 +1,19 @@
 <?php
-echo '<pre>';
 include("Factory/Boat.php");
 include("Factory/BoatInterface.php");
 include("Factory/BoatFactory.php");
 include("Factory/PirateBoat.php");
+include("Factory/SpeedBoat.php");
+include("Factory/MineSweeper.php");
 
-$factory = new BoatFactory();
+$factory = new DesignPatters\Factory\BoatFactory();
+
 $pirateBoat = $factory::create('pirate');
-$pirateBoat->sail(); echo "\n";
-$pirateBoat->steer(); echo "\n";
-$pirateBoat->dock();
+print_r ($pirateBoat->sail().'<br/>');
+print_r ($pirateBoat->steer().'<br/>');
+print_r ($pirateBoat->dock() .'<br/>');
+
+$speed = $factory::create('speed');
+print_r ($speed->sail().'<br/>');
+print_r ($speed->steer().'<br/>');
+print_r ($speed->dock() .'<br/>');

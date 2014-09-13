@@ -1,4 +1,4 @@
-<?php
+<?php namespace DesignPatters\Factory;
 
 interface BoatInterface {
 

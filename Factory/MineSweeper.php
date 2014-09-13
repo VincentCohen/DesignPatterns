@@ -1,19 +1,16 @@
-<?php
+<?php namespace DesignPatters\Factory;
 
+/**
+ * Class MineSweeper
+ *
+ * @package DesignPatters\Factory
+ */
 class MineSweeper extends Boat {
 
     public function __construct()
     {
-        // dependency injection?
+        $this->type = 'minesweeper';
+
+        parent::__construct();
     }
-
-    public function sail() {}
-
-    public function steer() {}
-
-    public function dock() {}
-
-    public function speedUp() {}
-
-    public function slowDown() {}
 }

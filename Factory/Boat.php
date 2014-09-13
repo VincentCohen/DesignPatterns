@@ -1,20 +1,56 @@
-<?php
+<?php namespace DesignPatters\Factory;
 
+/**
+ * Class Boat
+ *
+ * @package DesignPatters\Factory
+ */
 class Boat {
 
+    /**
+     * @var string
+     */
+    public $type = '';
+
+    /**
+     * @param $type
+     */
+    public function __construct(){}
+
+
+    /**
+     * @return string
+     */
     public function sail() {
-        echo 'Ayy! Setting sail';
+        return '<strong>'.$this->type.'</strong> Ayy! Setting sail';
     }
 
+    /**
+     * @return string
+     */
     public function steer() {
-        echo 'Steering captain!';
+        return '<strong>'.$this->type.'</strong> Steering captain!';
     }
 
+    /**
+     * @return string
+     */
     public function dock() {
-        echo 'Captain is leaving ship!';
+        return '<strong>'.$this->type.'</strong> Captain is leaving ship!';
     }
 
-    public function speedUp() {}
+    /**
+     * @return string
+     */
+    public function speedUp() {
+        return '<strong>'.$this->type.'</strong>Speeding!!';
+    }
 
-    public function slowDown() {}
+
+    /**
+     * @return string
+     */
+    public function slowDown() {
+        return '<strong>'.$this->type.'</strong>Slowing..';
+    }
 }
