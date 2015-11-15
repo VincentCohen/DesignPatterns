@@ -1,7 +1,7 @@
 <?php
 use ToppingInterface;
 
-class BasicTopping implements ToppingInterface{
+class BasicTopping implements ToppingInterface {
 
     const DESCRIPTION   = 'White bread with extra tastings';
 
