@@ -1,5 +1,5 @@
 <?php
-include "SandwichInterface.php";
+include "ToppingInterface.php";
 include "BasicSandwich.php";
 include "MozzarellaTopping.php";
 include "CheeseTopping.php";
