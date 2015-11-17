@@ -6,11 +6,11 @@ class MozzarellaTopping implements ToppingInterface {
 
     const COST        = 5;
 
-    protected $Topping;
+    protected $topping;
 
-    public function __construct(ToppingInterface $Topping)
+    public function __construct(ToppingInterface $topping)
     {
-        $this->Topping = $Topping;
+        $this->Topping = $topping;
     }
 
     /**
