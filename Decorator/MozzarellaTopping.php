@@ -10,7 +10,7 @@ class MozzarellaTopping implements ToppingInterface {
 
     public function __construct(ToppingInterface $topping)
     {
-        $this->Topping = $topping;
+        $this->topping = $topping;
     }
 
     /**
@@ -18,7 +18,7 @@ class MozzarellaTopping implements ToppingInterface {
      */
     public function getDescription()
     {
-        return $this->Topping->getDescription() . ', ' . self::DESCRIPTION;
+        return $this->topping->getDescription() . ', ' . self::DESCRIPTION;
     }
 
     /**
@@ -26,6 +26,6 @@ class MozzarellaTopping implements ToppingInterface {
      */
     public function getCost()
     {
-        return $this->Topping->getCost() + self::COST;
+        return $this->topping->getCost() + self::COST;
     }
 }
