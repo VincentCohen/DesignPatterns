@@ -6,11 +6,11 @@ class CheeseTopping implements ToppingInterface {
 
     const COST        = 12;
 
-    protected $Topping;
+    protected $topping;
 
-    public function __construct(ToppingInterface $Topping)
+    public function __construct(ToppingInterface $topping)
     {
-        $this->Topping = $Topping;
+        $this->topping = $topping;
     }
 
     /**
@@ -18,7 +18,7 @@ class CheeseTopping implements ToppingInterface {
      */
     public function getDescription()
     {
-        return $this->Topping->getDescription() . ', ' . self::DESCRIPTION;
+        return $this->topping->getDescription() . ', ' . self::DESCRIPTION;
     }
 
     /**
@@ -26,6 +26,6 @@ class CheeseTopping implements ToppingInterface {
      */
     public function getCost()
     {
-        return $this->Topping->getCost() + self::COST;
+        return $this->topping->getCost() + self::COST;
     }
 }
